@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+#header {
+    width: 100vw;
+    height: 10vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10% 0 10%;
+}
+
+#header .sub-menu ul {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+#header .sub-menu ul li {
+    font-size: 17px;
+    cursor: pointer;
+    color: #626562;
+    transition: all 0.2s;
+}
+
+#header .sub-menu ul li:last-child {
+    font-size: 25px;
+    color: #404340;
+    padding-left: 15px;
+}
+
+#header .sub-menu ul li:hover {
+    color: #0cb780;
+}
+
+#header .logo i {
+    color: #0cb780;
+    font-size: 22px;
+}
+
+#header .logo span {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+#hero {
+    width: 100vw;
+    height: 80vh;
+}
+
+#hero .slide {
+    height: 80vh;
+    width: 100%;
+    background-image: url(../img/student.jpg);
+    background-size: cover;
+}
+
+#hero .slide .content {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    height: 80vh;
+    justify-content: center;
+    padding-left: 20%;
+}
+
+#hero .slide .content h3 {
+    color: white;
+    font-size: 42px;
+    width: 29%;
+}
+
+#hero .slide .content span {
+    color: white;
+    opacity: 0.8;
+    width: 40%;
+}
+
+#hero .slide .content a {
+    width: 180px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #0cb780;
+    color: #0cb780;
+    font-size: 17px;
+}
