@@ -55,10 +55,11 @@
 #hero {
     width: 100vw;
     height: 80vh;
+
 }
 
 #hero .slide {
-    height: 80vh;
+    height: 100%;
     width: 100%;
     background-image: url(../img/student.jpg);
     background-size: cover;
