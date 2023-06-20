@@ -10,13 +10,27 @@
 }
 
 #header {
-    width: 100vw;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
     height: 10vh;
-    background-color: #fff;
+}
+
+#header .header-container.navbar-scroll {
+    box-shadow: 0px 0px 57px 3px rgba(0, 0, 0, 0.25);
+}
+
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10% 0 10%;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    transition: all .4s;
 }
 
 #header .sub-menu ul {
@@ -49,18 +63,16 @@
 
 #header .logo span {
     font-weight: 500;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 #hero {
-    width: 100vw;
     height: 80vh;
-
+    width: 100%;
 }
 
 #hero .slide {
     height: 100%;
-    width: 100%;
     background-image: url(../img/student.jpg);
     background-size: cover;
 }
@@ -96,4 +108,175 @@
     border: 1px solid #0cb780;
     color: #0cb780;
     font-size: 17px;
+}
+
+#top-subject {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#top-subject h2 {
+    color: #414742;
+    font-weight: 500;
+}
+
+#top-subject .boxes {
+    display: flex;
+    justify-content: space-around;
+    gap: 18px;
+    width: 70%;
+}
+
+#top-subject .boxes .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #729f94;
+    background-color: #edfbf8;
+    gap: 8px;
+    height: 200px;
+    width: 170px;
+}
+
+#top-subject .boxes .box i {
+    font-size: 42px;
+    width: 70px;
+    height: 70px;
+    background-color: #b9e9e0;
+    color: #017d65;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#top-subject .boxes .box span:first-child {
+    font-weight: bold;
+}
+
+#top-subject .boxes .box span:last-child {
+    opacity: 0.7;
+    font-size: 15px;
+}
+
+#top-courses {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 70%;
+    height: 60vh;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#top-courses .box {
+    margin: 0 auto;
+    height: 450px;
+    width: 95%;
+    background-color: #edfbf8;
+    text-align: center;
+    position: relative;
+}
+
+#top-courses .box:hover .hover-div {
+    bottom: 0;
+}
+
+#top-courses .box .hover-div {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    background-color: #01856a;
+    bottom: -999px;
+    transition: 0.4s all ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
+    padding: 20px;
+}
+
+#top-courses .box .hover-div span {
+    color: white;
+}
+
+#top-courses .box .hover-div p {
+    color: #fff;
+    font-size: 14px;
+}
+
+#top-courses .box .hover-div a {
+    padding: 8px 24px;
+    background-color: #fff;
+    border: none;
+    color: #448370;
+    outline: none;
+    font-weight: 400;
+}
+
+#top-courses .box img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+#top-courses h2 {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+    height: 40vh;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.educa-social {
+    border: solid 1px red;
+    height: 30vh;
+    width: 50vh;
+}
+
+.footer-container .header-foot i {
+    color: #0cb780;
+    font-size: 30px;
+}
+
+.footer-container .header-foot span {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.educa-social p {
+    font-size: 18px;
+}
+
+.footer-container .educa-social .icons {
+    display: flex;
+    gap: 20px;
+    height: 45px;
+    width: 58px;
+}
+
+.educa-social i {
+    font-size: 38px;
+    background-color: #017d65;
+    color: white;
+
 }
